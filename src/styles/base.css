@@ -20,23 +20,30 @@ body {
     margin: 0 auto;
 }
 
+.section-paddings {
+    padding: 20px 20px 40px;
+    box-sizing: border-box;
+}
 
 h1 {
     color: var(--light-color);
+
     font-family: Forum;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 50px;
     letter-spacing: 0.6px;
+
     display: inline;
     margin: 0;
     z-index: 5;
 }
 
 h2 {
-    font-size: 40px;
     color: var(--secondary-dark-color);
+
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: 40px; /* 100% */
@@ -44,6 +51,7 @@ h2 {
     text-transform: capitalize;
     font-family: Forum, serif;
     text-align: center;
+
     position: relative;
     margin-bottom: 61px;
     margin-top: 0;
@@ -53,6 +61,7 @@ h2::after {
     content: '';
     position: absolute;
     background: var(--secondary-dark-color);
+
     left: 0;
     right: 0;
     margin: auto;
@@ -63,6 +72,7 @@ h2::after {
 
 h3 {
     color: var(--main-dark-color);
+
     font-family: Forum, serif;
     font-size: 20px;
     font-style: normal;
@@ -70,6 +80,7 @@ h3 {
     line-height: 40px; /* 200% */
     letter-spacing: 2px;
     text-transform: capitalize;
+
     margin: 0;
     margin-bottom: 20px;
     position: relative; 
@@ -79,6 +90,7 @@ h3::after {
     content: '';
     position: absolute;
     background: var(--accent-color);
+
     left: 0;
     bottom: 0px;
     width: 60px;
@@ -87,6 +99,7 @@ h3::after {
 
 h4 {
     color: var(--main-dark-color);
+
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
@@ -94,4 +107,34 @@ h4 {
     line-height: 40px; /* 266.667% */
     letter-spacing: 2px;
     text-transform: capitalize;
+}
+
+.text {
+    color: var(--main-dark-color);
+
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+
+    margin: 0;
+}
+
+.text_narrow {
+    letter-spacing: 0;
+}
+
+.text_bold {
+    font-weight: 700;
+}
+
+.text_accent-color {
+    color: var(--accent-color);
+}
+
+.text_uppercase {
+    text-transform: uppercase;
 }
