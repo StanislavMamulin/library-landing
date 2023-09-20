@@ -1,0 +1,70 @@
+.menu__title {
+    font-family: Forum;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.coffee-shop__description {
+    margin-bottom: 40px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drinks {
+    width: 438px;
+}
+
+.menu__items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+}
+
+.drink {
+    display: flex;
+    align-items: center;
+} 
+
+.drink__name {
+    flex-basis: 200px;
+    text-align: left;
+}
+
+.separator {
+    width: 100px;
+    height: 1px;
+    background: var(--accent-color);
+}
+
+.desserts {
+    width: 482px;
+}
+
+.dessert {
+    display: flex;
+    align-items: center;
+} 
+
+.dessert__name {
+    flex-basis: 235px;
+    text-align: right;
+}
+
+.dessert__title {
+    text-align: right;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        flex-direction: column;
+        gap: 40px 0;
+    }
+  
+    .desserts {
+        align-self: flex-end;
+    }
+}
