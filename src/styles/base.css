@@ -138,3 +138,48 @@ h4 {
 .text_uppercase {
     text-transform: uppercase;
 }
+
+.button {
+    width: 75px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid var(--secondary-dark-color);
+    background: var(--light-color);
+    transition: all .5s;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    top:-5px;
+    right:-5px;
+    left:-5px;
+    bottom:-5px;
+}
+
+.button:not([disabled]):hover {
+    background: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+}
+
+.button__title {
+    color: var(--secondary-dark-color);
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.button_active {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.hidden {
+    display: none;
+}
