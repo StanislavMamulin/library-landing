@@ -1,0 +1,98 @@
+.favorites__text {
+  text-align: left;
+  line-height: 20px;
+
+  height: 24px;
+  margin-bottom: 36px;
+}
+
+.seasons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+}
+
+.seasons label {
+  padding: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.seasons input {
+  margin-right: 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  
+  accent-color: var(--main-dark-color);
+}
+
+.favorites__books-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px 260px;
+}
+
+.book__names-container {
+  margin-bottom: 20px;
+}
+
+.book__names-container p {
+  text-align: start;
+  font-size: 15px;
+
+  color: var(--main-dark-color);
+}
+
+.book__description {
+  text-align: start;
+  font-size: 15px;
+  text-transform: capitalize;
+
+  width: 355px;
+  margin-bottom: 15px;
+}
+
+.book {
+  width: 550px;
+  height: 555px;
+  flex-shrink: 0;
+  padding: 15px 20px;
+  border: 1px solid var(--main-dark-color);
+  background: var(--light-color);
+  position: relative;
+  box-sizing: border-box;
+}
+.book__button {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+}
+
+.book__cover {
+  width: 200px;
+  height: 300px;
+  flex-shrink: 0;
+
+  position: absolute;
+  right: -40px;
+  bottom: -1px;
+}
+
+@media (max-width: 1024px) {
+  .favorites__books-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px 0;
+    align-content: space-around;
+    padding-right: 40px;
+  }
+  
+  .seasons {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0 86px;
+  }
+}

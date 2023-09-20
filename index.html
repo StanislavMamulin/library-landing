@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./src/styles/header.css">
   <link rel="stylesheet" href="./src/styles/welcome.css">
   <link rel="stylesheet" href="./src/styles/about.css">
+  <link rel="stylesheet" href="./src/styles/favorites.css">
 </head>
 <body>
   <header class="header">
@@ -64,6 +65,77 @@
             </div>
           </div>
           <div class="carousel__arrow carousel__arrow_right"></div>
+        </div>
+      </section>
+      
+      <section class="section-paddings favorites" id="favorites">
+        <h2 class="favorites__title">Favorites</h2>
+        <p class="text text_bold text_narrow favorites__text">Pick favorites of season</p>
+        <form class="seasons">
+          <label for="seasonchoice1">
+            <input type="radio" id="seasonchoice1" name="season" value="winter" checked>Winter
+          </label>
+          <label for="seasonchoice2">
+            <input type="radio" id="seasonchoice2" name="season" value="spring">Spring
+          </label>
+          <label for="seasonchoice3">
+            <input type="radio" id="seasonchoice3" name="season" value="summer">Summer
+          </label>
+          <label for="seasonchoice4">
+            <input type="radio" id="seasonchoice4" name="season" value="autumn">Autumn
+          </label>
+        </form>
+        <div class="favorites__books-container">
+          <div class="book">
+            <h3>Staff picks</h3>
+            <div class="book__names-container">
+              <p class="text text_uppercase text_bold">The Book Eaters</p>
+              <p class="text text_bold">By Sunyi Dean</p>
+            </div>
+            <p class="book__description text">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+            <button class="button button__title book__button">Buy</button>
+            <img class="book__cover" src="./src/assets/img/favorites/book1.jpeg" alt="book cover">
+          </div>
+          <div class="book">
+            <h3>Staff picks</h3>
+            <div class="book__names-container">
+              <p class="text text_uppercase text_bold">Cackle</p>
+              <p class="text text_bold">By Rachel Harrison</p>
+            </div>
+            <p class="book__description text">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
+            <button class="button button__title book__button">Buy</button>
+            <img class="book__cover" src="./src/assets/img/favorites/book2.jpeg" alt="book cover">
+          </div>       
+          <div class="book">
+            <h3>Staff picks</h3>
+            <div class="book__names-container">
+              <p class="text text_uppercase text_bold">Dante: Poet of the Secular World</p>
+              <p class="text text_bold">By Erich Auerbach</p>
+            </div>
+            <p class="book__description text">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
+            <button class="button button__title book__button">Buy</button>
+            <img class="book__cover" src="./src/assets/img/favorites/book3.jpeg" alt="book cover">
+          </div>                    
+          <div class="book">
+            <h3>Staff picks</h3>
+            <div class="book__names-container">
+              <p class="text text_uppercase text_bold">The Last Queen</p>
+              <p class="text text_bold">By Clive Irving</p>
+            </div>
+            <p class="book__description text">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
+            <button class="button button__title book__button button_active" disabled>Own</button>
+            <img class="book__cover" src="./src/assets/img/favorites/book4.jpeg" alt="book cover">
+          </div> 
+          <div class="book hidden">
+            <h3>Staff picks</h3>
+            <div class="book__names-container">
+              <p class="text text_uppercase text_bold">The Body</p>
+              <p class="text text_bold">By Stephen King</p>
+            </div>
+            <p class="book__description text">Powerful novel that takes you back to a nostalgic time, exploring both the beauty and danger and loss of innocence that is youth.</p>
+            <button class="button button__title book__button button-active" disabled>Own</button>
+            <img class="book__cover" src="./src/assets/img/favorites/book5.jpeg" alt="book cover">
+          </div> 
         </div>
       </section>
       
