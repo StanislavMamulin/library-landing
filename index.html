@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brooklyn Public Library</title>
-
+  
   <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
+  
   <link rel="stylesheet" href="./src/styles/normalize.css">
   <link rel="stylesheet" href="./src/styles/base.css">
   <link rel="stylesheet" href="./src/styles/header.css">
   <link rel="stylesheet" href="./src/styles/welcome.css">
+  <link rel="stylesheet" href="./src/styles/about.css">
 </head>
 <body>
   <header class="header">
@@ -28,12 +29,12 @@
         </nav>
         <img class="profile-icon" src="./src/assets/icons/icon_profile.svg" alt="Profile">   
         <div class="burger">
-            <span></span>
+          <span></span>
         </div>
       </div>
     </div>   
   </header>
-
+  
   <main>
     <div class="content">
       <section class="welcome">
@@ -42,9 +43,33 @@
           <h4 class="welcome__title">Welcome<br>to the Brooklyn<br>Library</h4>
         </div>
       </section>
+      
+      <section class="section-paddings about" id="about">
+        <h2 class="about__title">About</h2>
+        <p class="text text_narrow description">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
+        <div class="carousel-container">
+          <div class="carousel__arrow carousel__arrow_left"></div>
+          <div class="images-container">
+            <div class="carousel__images">
+              <img class="carousel__image" src="./src/assets/img/about/about1.jpeg" alt="Girl in a library">
+              <img class="carousel__image" src="./src/assets/img/about/about2.jpeg" alt="Busts">
+              <img class="carousel__image" src="./src/assets/img/about/about3.jpeg" alt="Bookshelves">
+            </div>
+            <div class="pagination">
+              <div class="page-indicator page-indicator_active"></div>
+              <div class="page-indicator"></div>
+              <div class="page-indicator"></div>
+              <div class="page-indicator page-indicator_extra"></div>
+              <div class="page-indicator page-indicator_extra"></div>
+            </div>
+          </div>
+          <div class="carousel__arrow carousel__arrow_right"></div>
+        </div>
+      </section>
+      
     </div>
   </main>
-
+  
   <script src="./src/scripts/burger.js"></script>
 </body>
 </html>

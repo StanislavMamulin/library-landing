@@ -1,0 +1,141 @@
+.about {
+  padding-bottom: 35px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.carousel__arrow {
+  display: none;
+}
+
+.carousel__images {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.carousel__image {
+  max-width: 450px;
+  min-width: 100px;
+  max-height: 560px;
+  flex-shrink: 1;
+  object-fit: cover;
+}
+
+.pagination {
+  --indicator-distance: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--indicator-distance);
+  margin: 0 auto;
+}
+
+.page-indicator {
+  position: relative;
+  flex-shrink: 0;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+  background: var(--secondary-dark-color);
+  cursor: pointer;
+
+  transition: transform ease-in-out .2s;
+}
+
+.page-indicator::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--indicator-distance) / 2 * -1);
+  right: calc(var(--indicator-distance) / 2 * -1);
+  left: calc(var(--indicator-distance) / 2 * -1);
+  bottom: calc(var(--indicator-distance) / 2 * -1);
+}
+
+.page-indicator:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+
+.page-indicator_active {
+  background: var(--accent-color);
+}
+
+.page-indicator_extra {
+  display: none;     
+} 
+
+@media (max-width: 1024px) {
+  .carousel__arrow {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+
+    color: var(--main-dark-color);
+    cursor: pointer;
+    position: relative;
+
+    transition: all ease-in-out .2s;
+  }
+
+  .carousel__arrow:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.5);
+  }
+
+  .carousel__arrow::after {
+    --click-offset: -5px;
+
+    content: "";
+    position: absolute;
+    top: var(--click-offset);
+    bottom: var(--click-offset);
+    left: var(--click-offset);
+    right: var(--click-offset);
+  }
+
+  .carousel__arrow_left {
+    background: url('../assets/icons/Carret_Left.svg') center / cover no-repeat;
+  }
+  
+  .carousel__arrow_right {
+    background: url('../assets/icons/Carret_Right.svg') center / cover no-repeat;
+  }
+
+  .carousel__images {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 0;
+    width: 450px;
+  }
+  
+  .carousel__image {
+    width: 450px;
+    
+    height: 560px;
+    flex-shrink: 0;
+  }
+  
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0 58px;
+  }
+
+  .page-indicator_extra {
+    display: flex;
+  }
+}
