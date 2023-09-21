@@ -183,3 +183,15 @@ h4 {
 .hidden {
     display: none;
 }
+
+p {
+    margin: 0;
+}
+
+a {
+    transition: all .5s;
+}
+
+a:hover {
+    color: var(--accent-color);
+}

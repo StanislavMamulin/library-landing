@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./src/styles/favorites.css">
   <link rel="stylesheet" href="./src/styles/coffee_shop.css">
   <link rel="stylesheet" href="./src/styles/contacts.css">
+  <link rel="stylesheet" href="./src/styles/digital_library.css">
 </head>
 <body>
   <header class="header">
@@ -227,6 +228,33 @@
           </div>
           <div class="map__container">
             <img class="map__image" src="./src/assets/img/map.png" alt="map">
+          </div>
+        </div>
+      </section>
+      
+      <section class="section-paddings library-cards" id="librarycard">
+        <h2>Digital Library Cards</h2>
+        <div class="cards-container">
+          <div class="find-container">
+            <p class="card-text find__title">Find your Library card</p>
+            <div class="check-card-container">
+              <div class="check-card__fields">
+                <p class="card-text check-card__title">Brooklyn Public Library</p>
+                <form class="check-card__form">
+                  <input class="check-card__input card-text check-card__readers-input" placeholder="Reader's name">
+                  <input class="check-card__input card-text" placeholder="Card number">
+                </form>
+              </div>
+              <button class="button button__title check-card__btn">Check the card</button>
+            </div>
+          </div>
+          <div class="get-card-container">
+            <p class="card-text get-card__title">Get a reader card</p>
+            <p class="text get-card-text">You will be able to see a reader card after logging into account or you can register a new account</p>
+            <div class="login-buttons">
+              <button class="button button__title">Sign Up</button>
+              <button class="button button__title">Log in</button>
+            </div>
           </div>
         </div>
       </section>

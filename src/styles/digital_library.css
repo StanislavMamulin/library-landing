@@ -1,0 +1,133 @@
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-text {
+  color: var(--main-dark-color);
+  font-family: Forum;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px; /* 166.667% */
+  letter-spacing: 0.6px;
+}
+
+.find__title {
+  font-family: Inter;
+  line-height: normal;
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.check-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 20px 20px 30px;
+  max-width: 600px;
+  height: 387px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 3px solid var(--accent-color);
+  box-sizing: border-box;
+  background: var(--light-color);
+}   
+
+.check-card__fields {
+  padding: 20px 20px 25px;
+  box-sizing: border-box;
+  max-width: 560px;
+  margin-bottom: 20px;
+
+  background: var(--accent-color);
+}
+
+.check-card__title {
+  margin-bottom: 20px;
+}
+
+.check-card__input {
+  width: 100%;
+  height: 66px;
+  flex-shrink: 0;
+  padding-left: 20px;
+
+  border-radius: 10px;
+  border-color: var(--light-color);
+  border-width: 0;
+  box-sizing: border-box;
+
+  background: var(--light-color);
+  color: var(--inactive-color);
+}
+
+.check-card__readers-input {
+  margin-bottom: 25px;
+}
+
+.check-card__btn {
+  position: relative;
+  display: inline-flex;
+  padding: 10px 40px;
+  align-items: flex-end;
+  width: auto;
+  height: auto;
+
+  font-size: 20px;
+}
+
+.get-card__title {
+  line-height: normal;
+}
+
+.get-card-text {
+  letter-spacing: 0.4px;
+  text-align: right;
+}
+
+.get-card-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 35px 0;
+  width: 456px;
+}
+
+.login-buttons {
+  display: flex;
+  gap: 0 20px;
+}
+
+@media (max-width: 1024px) {
+  .library-cards {
+    margin-top: -4px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 21px 0;
+    padding: 0 64px;
+  }  
+  .get-card-container {
+    width:100%;
+    align-items: center;
+  }  
+  
+  .get-card-text {
+    text-align: center;
+
+    margin-top: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .check-card__fields {
+    margin-bottom: 18px;
+  }
+}
